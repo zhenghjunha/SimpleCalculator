@@ -112,7 +112,7 @@
         function appendValue(value) {
             // 第一处错误
             // displayValue === '0' && value !== '.'
-            if (displayValue === '0') {
+            if (displayValue === '0' && value !== '.') {
                 displayValue = value;
             } else {
                 displayValue += value;
