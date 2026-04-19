@@ -139,7 +139,7 @@
                 // 使用 Function 构造函数来计算表达式
                 // 注意：在生产环境中，建议使用更安全的数学表达式解析器
                 const result = new Function('return ' + displayValue)();
-                displayValue = String(resalt);//第二处错误，result
+                displayValue = String(result);//第二处错误，result
                 updateDisplay();
             } catch (error) {
                 displayValue = '错误';
